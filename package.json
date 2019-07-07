@@ -1,0 +1,28 @@
+{
+  "name": "env-dep",
+  "version": "0.1.0",
+  "description": "Alias dependencies according to your env variables",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js && NODE_ENV=development node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oakfang/env-dep.git"
+  },
+  "author": "Alon Niv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oakfang/env-dep/issues"
+  },
+  "homepage": "https://github.com/oakfang/env-dep#readme",
+  "envDependencies": {
+    "api": {
+      "_": "./injected",
+      "development": "./dev"
+    }
+  },
+  "dependencies": {
+    "read-pkg": "^5.1.1"
+  }
+}
